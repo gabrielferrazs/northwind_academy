@@ -1,5 +1,5 @@
 models:
-  - name: dim_products
+  - name: int_vendas__prep_products
     description: Dimensão de Produtos da Northwind.
     columns:
       - name: PK_PRODUTO
