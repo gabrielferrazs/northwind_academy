@@ -1,0 +1,43 @@
+models:
+  - name: dim_products
+    description: Dimensão de Produtos da Northwind.
+    columns:
+      - name: PK_PRODUTO
+        description: A preencher
+        tests:
+          - not_null
+          - unique
+          
+      - name: PRODUCTNAME
+        description: A preencher
+        
+      - name: QUANTITYPERUNIT
+        description: A preencher
+        
+      - name: UNITPRICE
+        description: A preencher
+        
+      - name: UNITSINSTOCK
+        description: A preencher
+        
+      - name: UNITSONORDER
+        description: A preencher
+        
+      - name: REORDERLEVEL
+        description: A preencher
+        
+      - name: DISCONTINUED
+        description: A preencher
+        
+      - name: CATEGORYNAME
+        description: A preencher
+        
+      - name: COMPANYNAME
+        description: A preencher
+        
+      - name: CITY
+        description: A preencher
+        
+      - name: COUNTRY
+        description: A preencher
+        
