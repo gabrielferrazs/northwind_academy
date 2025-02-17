@@ -13,3 +13,4 @@ sources:
                 
       - name: products
       - name: suppliers
+      - name: employees
