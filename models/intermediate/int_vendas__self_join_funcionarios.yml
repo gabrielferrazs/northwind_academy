@@ -1,0 +1,30 @@
+models:
+  - name: int_vendas__self_join_funcionarios
+    description: Dimensão de Funcionarios da Northwind.
+    columns:
+      - name: PK_FUNCIONARIO
+        description: A PREENCHER.
+
+      - name: NAME_EMPLOYEE
+        description: A preencher.
+
+      - name: NAME_MANAGER
+        description: A preencher.
+
+      - name: TITLE
+        description: A preencher.
+
+      - name: BIRTHDATE
+        description: A preencher.
+
+      - name: HIREDATE
+        description: A preencher.
+
+      - name: CITY
+        description: A preencher.
+
+      - name: REGION
+        description: A preencher.
+
+      - name: COUNTRY
+        description: A preencher.
