@@ -17,14 +17,14 @@ category as (
 
 , cte_enriquecer_procutos as (
     select 
-    p.PK_PRODUTO
-    , p.PRODUCTNAME
-    , p.QUANTITYPERUNIT
-    , p.UNITPRICE
-    , p.UNITSINSTOCK
-    , p.UNITSONORDER
-    , p.REORDERLEVEL
-    , p.DISCONTINUED
+    p.pk_produto
+    , p.productname
+    , p.quantityperunit
+    , p.unitprice
+    , p.unitsinstock
+    , p.unitsonorder
+    , p.reorderlevel
+    , p.discontinued
     , c.categoryname
     , s.companyname
     , s.city

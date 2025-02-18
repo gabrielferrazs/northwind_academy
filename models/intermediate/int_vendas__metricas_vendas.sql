@@ -12,23 +12,23 @@ orders as (
 
 , joined as (
     select
-    order_details.PK_PEDIDO_ITEM
-    , order_details.FK_PRODUTO
-    , orders.FK_FUNCIONARIO
+    order_details.pk_pedido_item
+    , order_details.fk_produto
+    , orders.fk_funcionario
     , orders.fk_cliente
-    , orders.FK_TRANSPORTADORA
-    , orders.ORDER_DATE
-    , orders.REQUIRED_DATE
-    , orders.SHIPPED_DATE    
-    , order_details.UNIT_PRICE
-    , order_details.QUANTITY
-    , order_details.DISCOUNT
-    , orders.FREIGHT
-    , orders.SHIP_NAME
-    , orders.SHIP_ADDRESS
-    , orders.SHIP_CITY
-    , orders.SHIP_REGION
-    , orders.SHIP_COUNTRY
+    , orders.fk_transportadora
+    , orders.order_date
+    , orders.required_date
+    , orders.shipped_date    
+    , order_details.unit_price
+    , order_details.quantity
+    , order_details.discount
+    , orders.freight
+    , orders.ship_name
+    , orders.ship_address
+    , orders.ship_city
+    , orders.ship_region
+    , orders.ship_country
 
     from order_details
     inner join orders 
@@ -37,29 +37,29 @@ orders as (
 
 , metricas as (
     select
-    PK_PEDIDO_ITEM
-    , FK_PRODUTO
-    , FK_FUNCIONARIO
+    pk_pedido_item
+    , fk_produto
+    , fk_funcionario
     , fk_cliente
-    , FK_TRANSPORTADORA
-    , ORDER_DATE
-    , REQUIRED_DATE
-    , SHIPPED_DATE    
-    , UNIT_PRICE
-    , QUANTITY
-    , DISCOUNT
-    , FREIGHT
-    , UNIT_PRICE * QUANTITY as total_bruto
-    , UNIT_PRICE * (1 - DISCOUNT) * QUANTITY as total_liquido
+    , fk_transportadora
+    , order_date
+    , required_date
+    , shipped_date    
+    , unit_price
+    , quantity
+    , discount
+    , freight
+    , unit_price * quantity as total_bruto
+    , unit_price * (1 - discount) * quantity as total_liquido
     , case
         when discount > 0 then true
         else false
-    end as Have_DISCOUNT
-    , SHIP_NAME
-    , SHIP_ADDRESS
-    , SHIP_CITY
-    , SHIP_REGION
-    , SHIP_COUNTRY
+    end as have_discount
+    , ship_name
+    , ship_address
+    , ship_city
+    , ship_region
+    , ship_country
     from joined
 )
 

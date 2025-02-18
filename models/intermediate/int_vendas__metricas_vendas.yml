@@ -1,10 +1,10 @@
 models:
   - name: int_vendas__metricas_vendas
-    description: Dimensão de Pedidos da Northwind.
+    description: Intermediaria de Pedidos da Northwind.
     columns:
       - name: PK_PEDIDO_ITEM
         description: A PREENCHER.
-        data_tests:
+        tests:
           - unique
           - not_null
 

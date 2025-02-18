@@ -1,0 +1,36 @@
+models:
+  - name: dim_customers
+    description: Dimensão de Funcionarios da Northwind.
+    columns:
+      - name: PK_CLIENTE
+        description: Chave única para identificar os clientes.
+
+      - name: COMPANYNAME
+        description: Nome das empresas.
+
+      - name: CONTACTNAME
+        description: Nome funcionario responsavel pelo contato.
+
+      - name: CONTACTTITLE
+        description: Cargo do funcionario cliente.
+
+      - name: ADDRESS	
+        description: Endereço empresa.
+
+      - name: CITY	
+        description: Cidade da empresa.
+
+      - name: REGION
+        description: Regiao da empresa.
+
+      - name: POSTALCODE
+        description: CEP da empresa.
+
+      - name: COUNTRY
+        description: Pais da empresa.
+
+      - name: PHONE
+        description: Telefone de contato do responsavel.
+
+      - name: FAX
+        description: Fax do responsavel.

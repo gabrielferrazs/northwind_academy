@@ -1,6 +1,6 @@
 models:
   - name: int_vendas__self_join_funcionarios
-    description: Dimensão de Funcionarios da Northwind.
+    description: Intermediaria de Funcionarios da Northwind.
     columns:
       - name: PK_FUNCIONARIO
         description: A PREENCHER.
