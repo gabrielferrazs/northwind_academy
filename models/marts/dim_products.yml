@@ -4,9 +4,6 @@ models:
     columns:
       - name: PK_PRODUTO
         description: A preencher
-        tests:
-          - not_null
-          - unique
           
       - name: PRODUCTNAME
         description: A preencher

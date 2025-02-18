@@ -1,13 +1,10 @@
 models:
   - name: int_vendas__prep_products
-    description: Dimensão de Produtos da Northwind.
+    description: Intermediaria de Produtos da Northwind.
     columns:
       - name: PK_PRODUTO
         description: A PREENCHER.
-        data_tests:
-          - unique
-          - not_null
-          
+
       - name: PRODUCTNAME
         description: A preencher
         

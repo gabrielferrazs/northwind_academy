@@ -1,0 +1,36 @@
+models:
+  - name: int_vendas__info_customers
+    description: Intermediaria de Pedidos da Northwind.
+    columns:
+      - name: PK_CLIENTE
+        description: A PREENCHER.
+
+      - name: COMPANYNAME
+        description: A PREENCHER.
+
+      - name: CONTACTNAME
+        description: A PREENCHER.
+
+      - name: CONTACTTITLE
+        description: A PREENCHER.
+
+      - name: ADDRESS	
+        description: A PREENCHER.
+
+      - name: CITY	
+        description: A PREENCHER.
+
+      - name: REGION
+        description: A PREENCHER.
+
+      - name: POSTALCODE
+        description: A PREENCHER.
+
+      - name: COUNTRY
+        description: A PREENCHER.
+
+      - name: PHONE
+        description: A PREENCHER.
+
+      - name: FAX
+        description: A PREENCHER.

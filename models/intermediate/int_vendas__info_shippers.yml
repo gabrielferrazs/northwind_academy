@@ -1,0 +1,12 @@
+models:
+  - name: int_vendas__info_shippers
+    description: Intermediaria de Transportadora da Northwind.
+    columns:
+      - name: PK_TRANSPORTADORA
+        description: A PREENCHER.
+
+      - name: COMPANYNAME
+        description: A PREENCHER.
+
+      - name: PHONE
+        description: A PREENCHER.
